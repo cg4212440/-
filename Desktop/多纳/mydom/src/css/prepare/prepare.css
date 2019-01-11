@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.prepare_wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress_head {
+  width: 100%;
+  height: 70rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+.progress_head img {
+  width: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+}
+
+.progress_head p {
+  width: 78rpx;
+  height: 70rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 70rpx;
+  letter-spacing: 0px;
+  color: #878787;
+}
+
+._progress {
+  width: 480rpx;
+  height: 14rpx;
+}
+
+.main {
+  flex: 1;
+  background-color: #f1f1f1;
+}
+
+.footer {
+  height: 100rpx;
+  background-color: #ffb400;
+}
+
+.footer p {
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+.contioner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contioner_wrap {
+  width: 262rpx;
+  height: 262rpx;
+  background-color: #ffffff;
+  box-shadow: 0rpx 8rpx 10rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contioner_wrap img {
+  width: 230rpx;
+  height: 230rpx;
+  background-color: #00a0e9;
+  border-radius: 10rpx;
+}
+
+.contioner_wrap:nth-child(odd) {
+  margin-left: 86rpx;
+  margin-top: 60rpx;
+}
+
+.contioner_wrap:nth-child(even) {
+  margin-left: 80rpx;
+}
+
+.contioner_wrap {
+  margin-top: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trumpet {
+  width: 144rpx;
+  height: 144rpx;
+  background-color: #ffb400;
+  box-shadow: 0px 6rpx 6rpx 0px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 148rpx;
+  left: 50%;
+  margin-left: -77rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trumpet img {
+  width: 60rpx;
+  height: 50rpx;
+}
+
+.trumpet img {
+  position: absolute;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    /*初始状态 透明度为0*/
+  }
+  100% {
+    opacity: 1;
+    /*结尾状态 透明度为1*/
+  }
+}
+
+.img1 {
+  animation: fadeInOut 1s infinite 0.2s;
+}
+
+.img2 {
+  animation: fadeInOut 1s infinite 0.4s;
+}
+
+.img3 {
+  animation: fadeInOut 1s infinite 0.6s;
+}
